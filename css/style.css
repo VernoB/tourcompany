@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62, 5%; }
+
+body {
+  color: #6d5d4b;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid; }
+
+.sidebar {
+  background-color: #c69963; }
+
+.header {
+  background-color: #101d2c; }
+
+.realtors {
+  background-color: #101d2c; }
+
+.features {
+  background-color: #f9f7f6; }
+
+.story__pictures {
+  background-color: #c69963; }
+
+.story__content {
+  background-color: #aaa; }
+
+.home {
+  background-color: #101d2c; }
+
+.galerry {
+  background-color: #54483a; }
+
+.footer {
+  background-color: #101d2c; }
