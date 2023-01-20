@@ -1,5 +1,12 @@
 .features {
-  background-color: $color-grey-light-1;
-  grid-row: 2 / 3;
   grid-column: center-start / center-end;
+
+  //for the subgrid
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // or subgrid
+  margin: 15rem 0;
+  gap: 6rem;
+
+  .feature {
+  }
 }
