@@ -3,10 +3,27 @@
 
   //for the subgrid
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // or subgrid
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // or subgrid
   margin: 15rem 0;
   gap: 6rem;
+  align-items: start;
+}
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
 
-  .feature {
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: $color-primary;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    color: $color-grey-dark-1;
   }
 }

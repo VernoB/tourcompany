@@ -1,0 +1,67 @@
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+.heading-1 {
+  @extend %heading;
+}
+.heading-2 {
+  @extend %heading;
+  font-size: calc(2rem + 2vw);
+  font-style: italic;
+  line-height: 1;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $color-primary;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.heading-h4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  background-color: $color-primary;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 2.5rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-hg {
+  margin-bottom: 5rem;
+}
