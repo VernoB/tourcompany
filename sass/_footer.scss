@@ -12,6 +12,15 @@
     gap: 2rem;
     align-items: center;
 
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, minmax(20rem, 1fr));
+      gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+      gap: 2rem;
+    }
+
     &__item {
       &:link,
       &:visited {
@@ -35,6 +44,9 @@
   }
 
   .copyright {
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
+    }
     margin-top: 1.7rem;
     color: $color-grey-light-2;
     font-size: 1.4rem;
